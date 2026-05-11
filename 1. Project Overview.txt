@@ -1,0 +1,38 @@
+1. Project Overview
+The Ephys Inspector is a lightweight Python-based diagnostic tool designed to provide ground-truth visual validation of spike-sorting results. It bridges the gap between raw .dat binary files and JRCLUST .prm/output files, allowing a researcher to verify if the "signals" being picked up correspond to physiological waveforms or artifacts.
+2. Target Data Architecture
+•	Source: In vivo electrophysiology (Anesthetized mice).
+•	Region: Tail of Striatum.
+•	File Types:
+o	.dat: Raw continuous binary data (int16/float32).
+o	.prm: JRCLUST parameter file (containing sampling rate, channel count, and thresholds).
+o	Metadata: TTL timestamps for 400ms sounds (600ms ISI).
+3. Functional Requirements
+FR1: Data Ingestion & Parsing
+•	Binary Loader: Must read large .dat files using memory mapping (numpy.memmap) to prevent RAM crashes.
+•	Config Parser: Automatically extract sampling_rate, nChannels, and bit_resolution from the .prm file.
+•	Segment Mapping: Ability to toggle between the four experimental segments:
+1.	Pre-CNO Baseline + Sound (TTL-triggered).
+2.	Post-CNO Injection (60s).
+3.	CNO Steady State (30m).
+4.	Post-CNO Sound (TTL-triggered).
+FR2: Visualization Engine
+•	Raw Trace Viewer: Multi-channel scrolling view of the continuous data (check load segment.mat. to see how the data should be processed)
+•	Signal Highlighting: Overlay "detected events" (spikes) onto the raw trace. Spikes should be marked with a color-coded dot or a transparent box over the waveform.
+•	TTL Overlay: Visual markers (vertical bars) indicating the onset/offset of the 400ms sound stimuli.
+FR3: Quality Control (QC) Analytics
+•	Waveform Inspector: Clicking a highlighted signal should open a pop-up showing the mean waveform ($μ \pm \sigma$) for that cluster.
+•	Threshold Line: Display the detection threshold line (e.g., $4 \times \text{median}(\text{abs}(x)/0.6745)$) as defined in the JRCLUST parameters.
+4. Technical Specifications
+•	Language: Python 3.9+.
+•	Key Libraries: numpy (math), pandas (metadata), pyqtgraph or Plotly (for high-performance interactive scrolling), scipy (filtering).
+•	Filtering: Apply a real-time Buttersworth bandpass filter (default 300 Hz – 3000 Hz, adjustable in UI) to the raw data for visual clarity without altering the underlying file.
+5. User Workflow (The "Antigravity" Logic)
+1.	Load: User selects the raw .dat file. The program automatically finds the .prm file if in the same folder, or prompts the user. User can also manually select JRCLUST output (_res.mat) and TTL events (.npy).
+2.	Define: User inputs the channel of interest (or view all).
+3.	Navigate: User uses a time slider and a customizable window size (e.g., show 1s, 5s, 10s of data) to move through the recording.
+4.	Verify: User visually confirms that the highlighted spikes follow the expected "striatal" morphology (fast-spiking interneurons vs. medium spiny neurons) and are not 50/60 Hz noise or injection artifacts.
+6. Success Criteria
+•	The program loads 1 minute of 32-channel data in under 2 seconds.
+•	The TTL markers align perfectly with the sound-evoked spikes in Segment 1 and 4.
+•	The user can clearly distinguish between CNO-induced activity changes and baseline noise.

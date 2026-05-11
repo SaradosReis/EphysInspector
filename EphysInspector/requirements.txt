@@ -1,0 +1,8 @@
+PySide6
+pyqtgraph
+numpy
+scipy
+pandas
+matplotlib
+openpyxl
+h5py

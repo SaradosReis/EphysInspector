@@ -1,0 +1,71 @@
+2025_07_14 - TS_ Audio Only
+
+Animal: P3252_3M
+DOB: 
+Genotype: SHANK3-KO
+
+Probe: 4 shank, ASSY-77-E1 Unit 6994 (that are only 3 now - one fell - got unglued because of the tripsine that went up)
+
+Channelmap:
+OE Board: OE_FPGA_Acquisition_Board-106.Rythm Data
+
+SAMPLE RATE: 30 ks/s
+FILTERS: LOW 324 HIGH 6000
+DSP - ON 0.6
+
+
+COORDINATES: 
+TS probe
+AP:-1.39
+ML:-3.19 (for 3 shanks)
+Dead channels: 48 and shank4: 28,27,26,25,24,23,19,20,21,22,15,31,32,29,30,18
+
+
+(played white noise sound -2.2 - no response, went directly to -2.5 DV)
+
+ ---------------------------------------RECORDING 1---
+File:2025-07-14_11-14-59
+DV:  - 2.5
+Baseline: 3min
+Audio Protocol with TTL between sounds: 8min
+
+Channel with good signals: 59,50/52,13/12/14/17,64, except for the 59 all the other signals are tiny
+
+Already response in 59,50,12/14/13/17
+
+ ---------------------------------------RECORDING 2---
+File: 2025-07-14_11-48-46
+DV:  - 2.8
+Baseline: 3min
+Audio Protocol with TTL between sounds: 8min total
+
+Good channels: 38,40,39/42/41,49/34/35/36,61,56/55/54/47/50/,
+/6/8
+
+Great response!! Almost all channels responded
+ ---------------------------------------RECORDING 3---
+File:2025-07-14_12-48-39
+DV:  - 3.1
+
+Baseline: 3min
+Audio Protocol with TTL between sounds: 8min total
+
+
+Good channels: reponse in channels: 38/37
+ ---------------------------------------RECORDING 4---
+File:
+DV:  - 3.4
+Baseline: 3min
+Audio Protocol with TTL between sounds: 8min total
+Good channels: 
+ ---------------------------------------RECORDING 5---
+File:
+DV:  - 3.7
+Baseline: 3min
+Audio Protocol with TTL between sounds: 8min total
+Good channels: 
+ ---------------------------------------RECORDING 6---
+File:
+DV:  - 
+
+Good channels: 
