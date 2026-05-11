@@ -36,10 +36,24 @@ How to use:
 **Ephys Inpsctor**
 
   <img width="2386" height="1658" alt="image" src="https://github.com/user-attachments/assets/edad1209-f054-4e75-99f1-2cb2d2a4b25d" />
+  
 
   ** Example of thresholding a signal**
   
   <img width="2368" height="1638" alt="image" src="https://github.com/user-attachments/assets/9f9cddc9-cdd8-46cd-ac48-4c3e2aafd4c2" />
+
+  **Run Analysis**
+
+  This part will give you the .m file for the spike detection
+
+  <img width="2378" height="1648" alt="image" src="https://github.com/user-attachments/assets/89d031a8-eeff-4472-a15d-659385c2ac0e" />
+
+  **Data visualization**
+  Example of the graphs (PSTH and raster)
+
+  <img width="2338" height="864" alt="image" src="https://github.com/user-attachments/assets/732d6a1a-a716-4323-b4dd-158f50d8bba9" />
+
+
 
  
 
