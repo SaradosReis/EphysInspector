@@ -32,8 +32,11 @@ How to use:
   -- Type "Python: Create Environment", select "Venv", and choose your Python 3.11
 
 **3. Install all the requirements**
+
 - In your terminal:
+  
   -- cd EphysInspector
+  
   -- pip install -r requirements.txt
   
 **4. Open the software**
