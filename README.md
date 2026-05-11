@@ -29,7 +29,7 @@ How to use:
   
   -- Press Ctrl + Shift + P (or Cmd + Shift + P on Mac)
   
-  -- Type "Python: Create Environment", select "Venv", and choose your Python version. VS Code will handle the rest!
+  -- Type "Python: Create Environment", select "Venv", and choose your Python 3.11
 
 **3. Install all the requirements**
 - In your terminal:
