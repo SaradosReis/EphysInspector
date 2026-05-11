@@ -8,6 +8,7 @@ EphysInspector is a specialized tool developed for the automated inspection and 
 - Analysis: Baseline and Auditory response PSTH and raster
 
 How to use:
+
 **1. Download the Project**
  - Click the green "Code" button at the top of this page.
 
@@ -18,6 +19,7 @@ How to use:
 **2. Create an Anaconda or VSCode env**
 - Option A:
   -- conda create -n ephys_env python=3.10
+  
   -- conda activate ephys_env
 
 - Option B
