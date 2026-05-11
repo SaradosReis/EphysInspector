@@ -1,7 +1,7 @@
 # Product Requirements Document (PRD): Ephys Analysis Platform
 
 ## 1. Project Overview
-The software is evolving from a lightweight visual diagnostic tool (EphysInspector) into a comprehensive Ephys Analysis Platform. It provides a multi-tab workstation for ground-truth visual validation of spike-sorting results, experimental data analysis, quality inspection of analyzed data, and automated generation of publication-ready graphs (replacing Graphpad). 
+The software is a comprehensive Ephys Analysis Platform. It provides a multi-tab workstation for ground-truth visual validation of spike-sorting results, experimental data analysis, quality inspection of analyzed data, and automated generation of publication-ready graphs (replacing Graphpad). 
 
 ## 2. Target Data Architecture
 *   **Source:** In vivo electrophysiology (Anesthetized mice).
