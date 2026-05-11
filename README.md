@@ -29,5 +29,17 @@ How to use:
 - In your terminal:
   -- cd EphysInspector
   -- pip install -r requirements.txt
+  
 **4. Open the software**
   -- python main.py
+
+**Ephys Inpsctor**
+
+  <img width="2386" height="1658" alt="image" src="https://github.com/user-attachments/assets/edad1209-f054-4e75-99f1-2cb2d2a4b25d" />
+
+  ** Example of thresholding a signal**
+  
+  <img width="2368" height="1638" alt="image" src="https://github.com/user-attachments/assets/9f9cddc9-cdd8-46cd-ac48-4c3e2aafd4c2" />
+
+ 
+
