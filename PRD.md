@@ -5,7 +5,7 @@ The software is a comprehensive Ephys Analysis Platform. It provides a multi-tab
 
 ## 2. Target Data Architecture
 *   **Source:** In vivo electrophysiology (Anesthetized mice).
-*   **Region:** Tail of Striatum.
+*   **Region:** All brain regions
 *   **File Types:**
     *   `.dat`: Raw continuous binary data (int16/float32).
     *   `.prm`: JRCLUST parameter file.
