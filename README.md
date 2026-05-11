@@ -40,6 +40,7 @@ How to use:
   -- pip install -r requirements.txt
   
 **4. Open the software**
+
   -- python main.py
 
 **Ephys Inpsctor**
