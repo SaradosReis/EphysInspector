@@ -18,13 +18,17 @@ How to use:
 
 **2. Create an Anaconda or VSCode env**
 - Option A:
+  
   -- conda create -n ephys_env python=3.10
   
   -- conda activate ephys_env
 
 - Option B
+  
   -- Open the folder in VS Code
+  
   -- Press Ctrl + Shift + P (or Cmd + Shift + P on Mac)
+  
   -- Type "Python: Create Environment", select "Venv", and choose your Python version. VS Code will handle the rest!
 
 **3. Install all the requirements**
