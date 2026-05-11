@@ -48,7 +48,8 @@ How to use:
 
   <img width="2378" height="1648" alt="image" src="https://github.com/user-attachments/assets/89d031a8-eeff-4472-a15d-659385c2ac0e" />
 
-  **Data visualization**
+
+  **Analysis Inspection - Data visualization**
   Example of the graphs (PSTH and raster)
 
   <img width="2338" height="864" alt="image" src="https://github.com/user-attachments/assets/732d6a1a-a716-4323-b4dd-158f50d8bba9" />
